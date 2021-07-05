@@ -164,7 +164,7 @@ footer {
 }
 
 footer > p {
-    padding-left: 30px;
+    padding-left: 15px;
 }
 
 hr {
@@ -179,9 +179,11 @@ hr {
     justify-content: space-evenly;
     padding-top: 5px;
 }
+
 .footer-about > a, .footer-privacy > a {
     padding-bottom: 2px;
-    padding-left: 22px;
+    padding-left: 15px;
+    padding-right: 15px;
     text-decoration: none;
     color: rgb(92, 88, 88);
 }
@@ -190,3 +192,13 @@ hr {
     text-decoration: underline;
 }
 
+@media screen and (min-width: 1200px) {
+    .footer-div {
+    justify-content: space-between;    }
+}
+
+@media screen and (max-width: 750px) {
+    .footer-div {
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+}
