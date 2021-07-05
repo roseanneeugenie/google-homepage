@@ -1,0 +1,184 @@
+body {
+    font-size: 12px;
+    font-family: arial,sans-serif;
+    color: #424448;
+    margin: 0;
+}
+
+.page-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 80px auto 80px;
+}
+
+/*Top nav bar: Gmail | Images | Apps | User*/
+
+.navbar {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: right;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li{
+    display: inline;
+    padding: 0 10px;
+}
+
+li a {
+    text-decoration: none;
+    color: #424448;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+.roundb:hover {
+    background: rgb(172, 171, 171);
+    border-radius: 50%;
+}
+
+/* Main Search Area*/
+.glogo {
+    margin-bottom: 30px;
+}
+.gsearch {
+    grid-column: 1 /-1;
+    padding-top: 170px;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.search-icon {
+    padding-left: 15px;
+    padding-right: 5px;
+}
+
+.searchbar {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border: 1px solid rgb(202, 199, 199);
+    border-radius: 25px;
+    height: 45px;
+    margin: 0 auto;
+    width: 600px;
+    width: auto;
+    max-width: 600px;
+}
+
+.searchbar:hover {
+    border: 1px solid rgb(248, 247, 247);
+    box-shadow:1px 1px 5px 1px rgb(151, 148, 148);  
+}
+
+.searchbar:focus-within {
+    border: 1px solid rgb(248, 247, 247);
+    box-shadow:1px 1px 5px 1px rgb(151, 148, 148); 
+}
+
+input {
+    border: transparent; 
+    font-size: 16px;
+    width: 600px;
+    width: auto;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input:active {
+    outline: none;
+}
+
+input:focus {
+    outline:none;
+}
+
+/*Google Search and I'm Feeling Lucky buttons*/
+button {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 3px;   
+    padding: 10px;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 30px;
+    color: #424448;
+    font-size: 14px;
+
+}
+
+button:hover {
+    cursor:pointer;
+    border: 1px solid #cccccc;
+}
+
+button:active {
+    border: 1px solid #3a46f0;
+ }
+
+ button:focus {
+     outline-color: #3a46f0;
+ }
+/*Google offered in: Languages*/
+.gsearch > p {
+    margin-top: 20px;
+    
+}
+
+.langlink {
+    padding-left: 10px;
+    text-decoration: none;
+    color:mediumblue;
+}
+
+.langlink:hover {
+    text-decoration:underline;
+}
+
+/*Footer*/
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(235, 235, 235);
+    color: rgb(92, 88, 88);
+    padding-bottom: 20px;
+    font-size: 15px;
+}
+
+footer > p {
+    padding-left: 30px;
+}
+
+hr {
+    width: 100%;
+    height: 1px;
+    background-color:rgb(194, 193, 193);
+    border: none;
+}
+
+.footer-div {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5px;
+}
+.footer-about > a, .footer-privacy > a {
+    padding-bottom: 2px;
+    padding-left: 22px;
+    text-decoration: none;
+    color: rgb(92, 88, 88);
+}
+
+.footer-about > a:hover, .footer-privacy > a:hover {
+    text-decoration: underline;
+}
+
